@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Navbar } from '../Components/Navbar'
+import { Navbar } from '../components/Navbar.js'
 import React from 'react'
 
 function Login() {
