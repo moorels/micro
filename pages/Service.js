@@ -1,7 +1,7 @@
 import { Navbar } from '../components/Navbar.js'
 import React,{ useState} from 'react'
 import styles from '../styles/Home.module.css'
-
+import {PrismaClient} from '@prisma/client';
 
 
 
@@ -95,3 +95,9 @@ function Service() {
 export default Service
 
 
+export async function getServerSideProps() {
+  const movies = await prisma.user.findMany();
+  return {
+    props: {
+      data:movies
+    }}}
