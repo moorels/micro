@@ -95,9 +95,3 @@ function Service() {
 export default Service
 
 
-export async function getServerSideProps() {
-  const movies = await prisma.user.findMany();
-  return {
-    props: {
-      data:movies
-    }}}
