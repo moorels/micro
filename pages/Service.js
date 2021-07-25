@@ -1,10 +1,10 @@
 import { Navbar } from '../components/Navbar.js'
 import React,{ useState} from 'react'
 import styles from '../styles/Home.module.css'
-import {PrismaClient} from '@prisma/client';
 
 
-const prisma = new PrismaClient();
+
+
 
 
 function Service() {
