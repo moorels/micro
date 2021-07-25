@@ -1,19 +1,11 @@
 import { Navbar } from '../components/Navbar.js'
-import React,{useState} from 'react'
-import {PrismaClient} from '@prisma/client';
+import React from 'react'
 
-const prisma = new PrismaClient();
 
-export async function getServerSideProps() {
-    const users = await prisma.user.findMany();
-    return {
-      props: { data: users },
-    };
-  }
-  
-function Contact({data}) {
 
-    const [movies,setMovies] = useState(data)
+function Contact() {
+
+    
     
     return (
 
