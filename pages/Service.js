@@ -7,9 +7,9 @@ import {PrismaClient} from '@prisma/client';
 const prisma = new PrismaClient();
 
 
-function Service({data}) {
+function Service() {
 
-  const [formData,setFormData] = useState ({})
+  
  
 
 
@@ -95,3 +95,9 @@ function Service({data}) {
 export default Service
 
 
+export async function getServerSideProps() {
+  const movies = await prisma.user.findMany();
+  return {
+    props: {
+      data:movies
+    }}}
