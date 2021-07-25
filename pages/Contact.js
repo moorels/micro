@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Navbar } from '../Components/Navbar.js'
+import { Navbar } from '../Components/Navbar'
 import React,{Fragment,useState} from 'react'
 import {PrismaClient} from '@prisma/client';
 
