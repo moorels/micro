@@ -1,4 +1,4 @@
-import { Navbar } from '../Components/Navbar'
+import { Navbar } from '../Components/Navbar.js'
 import React,{ useState} from 'react'
 import styles from '../styles/Home.module.css'
 import {PrismaClient} from '@prisma/client';
