@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Navbar } from '../Components/Navbar'
 import React,{ useState} from 'react'
 import styles from '../styles/Home.module.css'
