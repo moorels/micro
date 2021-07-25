@@ -1,4 +1,4 @@
-import { Navbar } from '../Components/Navbar.js'
+import { Navbar } from '../components/Navbar.js'
 import React from 'react'
 
 function Login() {
